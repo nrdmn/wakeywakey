@@ -1,6 +1,7 @@
 # ☕ wakey wakey
 
-This is a website that displays a button that sends a wake-on-lan request.
+This is a website that displays a button that sends a wake-on-lan request. Use
+any CGI-compatible webserver to run it.
 
 You can set the MAC address to be woken up using the `MAC_ADDRESS` variable at
 the top of cgi-bin/wakemeup.sh.
