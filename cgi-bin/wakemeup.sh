@@ -11,9 +11,9 @@ success() {
   # Normally, a cgi web server interprets the fake 'Status' header that we sent
   # and copies it to the response's status line. However, python's http server
   # always sends status code 200 before executing this script. This means that
-  # the 'Location' header doesn't have any effect when using
-  # python http server. To work around this, we additionally send a meta
-  # redirect.
+  # the 'Location' header doesn't have any effect when using python http
+  # server. To work around this, we additionally send a meta redirect.
+  # See https://docs.python.org/3/library/http.server.html#http.server.CGIHTTPRequestHandler
   echo '<!doctype html>'
   echo '<meta http-equiv="refresh" content="0; url=/index.html">'
 }
