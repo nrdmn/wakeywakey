@@ -26,4 +26,4 @@ error() {
   echo 'Internal Server Error'
 }
 
-wol "$MAC_ADDRESS" && success || error
+wol "$MAC_ADDRESS" > /dev/null && success || error
